@@ -15,7 +15,7 @@ Laravel task manager is a open source project about tasks.
 
 This project provided by Ali Ghanavati.
 
-This project created with laravel, tailwindcss, alpine.js.
+This project created with laravel, tailwindcss.
 
 Enjoy it.
 
