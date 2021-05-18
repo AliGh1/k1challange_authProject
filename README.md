@@ -7,6 +7,43 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About Laravel task manager
+
+Laravel task manager is a open source project about tasks.
+
+## Description
+
+This project provided by Ali Ghanavati.
+
+This project created with laravel, tailwindcss, alpine.js.
+
+Enjoy it.
+
+## Install
+
+1 - Step 1 is download full project from github.
+
+2 - Step 2 is Run `composer install`
+
+3 - Step 3 is config your database and email(mailtrap) config in .env file
+
+4 - Step 4 is run `php artisan key:generate`
+
+5 - Step 5 is run `php artisan migrate`
+
+6 - Step 6 is run `php artisan db:seed` for some fake data (optional)
+
+7 - Step 7 is run `php artisan serve`
+
+Go to `localhost:8000`
+
+Enjoy it.
+
+## Some Screenshot from project
+![image](https://user-images.githubusercontent.com/60067642/118696096-2b9ce200-b823-11eb-9604-19443cce4920.png)
+![image](https://user-images.githubusercontent.com/60067642/118696205-4bcca100-b823-11eb-95a2-445b0978209e.png)
+![image](https://user-images.githubusercontent.com/60067642/118696317-699a0600-b823-11eb-8e5b-9991a58ca06b.png)
+![image](https://user-images.githubusercontent.com/60067642/118696356-761e5e80-b823-11eb-86f2-b2a2f04d7bae.png)
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -20,42 +57,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
