@@ -4,6 +4,7 @@ use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\PhoneVerificationController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use Illuminate\Support\Facades\Route;
@@ -41,3 +42,12 @@ Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create']
 
 Route::post('/reset-password', [ResetPasswordController::class, 'store'])->middleware('guest')
     ->name('password.update');
+
+Route::get('/verify_phone', [PhoneVerificationController::class , 'notice'])->middleware('Auth')
+    ->name('auth.verify-phone');
+
+Route::post('/verify_phone' ,[PhoneVerificationController::class , 'verify'])->middleware('Auth');
+
+Route::post('/verify_phone/resend' ,[PhoneVerificationController::class , 'send'])
+    ->middleware(['Auth', 'throttle:6,1'])
+    ->name('auth.verify-phone.resend');

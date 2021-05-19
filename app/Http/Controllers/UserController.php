@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ChangePasswordRequest;
 use App\Http\Requests\UserUpdateRequest;
+use App\Models\ActiveCode;
 use App\Models\User;
+use App\Notifications\ActiveCodeNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
-use function Symfony\Component\Translation\t;
 
 class UserController extends Controller
 {
@@ -30,8 +31,17 @@ class UserController extends Controller
         $user->update([
            'first_name' => $request->first_name,
            'last_name' => $request->last_name,
-           'phone' => $request->phone
         ]);
+
+        if($user->phone != $request->phone){
+            // create a new code
+            $code = ActiveCode::generateCode($request->user());
+            $request->session()->flash('phone' , $request->phone);
+            // send the code to user phone number
+        $request->user()->notify(new ActiveCodeNotification($code , $request->phone));
+
+            return redirect(route('auth.verify-phone'));
+        }
 
         return redirect()->back()->with('status', 'Profile Updated.');
     }

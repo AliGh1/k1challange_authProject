@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
+
+
 Route::get('/profile', [ProfileController::class, 'index'])->middleware(['Auth','verified']);
 
 Route::match(['put','patch'],'/user/{user}', [UserController::class, 'update'])->name('user.update');

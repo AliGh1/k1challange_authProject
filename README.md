@@ -27,13 +27,15 @@ Enjoy it.
 
 3 - Step 3 is config your database and email(mailtrap) config in .env file
 
-4 - Step 4 is run `php artisan key:generate`
+4 - Step 4 is config your GHASEDAK_API_KEY in .env (you need to get api from https://ghasedak.io/ for send sms)
 
-5 - Step 5 is run `php artisan migrate`
+5 - Step 5 is run `php artisan key:generate`
 
-6 - Step 6 is run `php artisan db:seed` for some fake data (optional)
+6 - Step 6 is run `php artisan migrate`
 
-7 - Step 7 is run `php artisan serve`
+7 - Step 7 is run `php artisan db:seed` for some fake data (optional)
+
+8 - Step 8 is run `php artisan serve`
 
 Go to `localhost:8000`
 
