@@ -9,7 +9,7 @@
 
 ## About Laravel task manager
 
-Laravel task manager is a open source project about tasks.
+Laravel task manager is a open source project about auth.
 
 ## Description
 
